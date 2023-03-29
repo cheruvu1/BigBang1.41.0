@@ -10,9 +10,9 @@ metadata:
   namespace: bigbang
 spec:
   interval: 1m
-  url: https://replace-with-your-git-repo.git
+  url: https://github.com/cheruvu1/BigBang1.41.0.git
   ref:
-    branch: replace-with-your-branch
+    branch: template-win
   secretRef:
     name: private-git
 ---
