@@ -18,7 +18,7 @@ logging:
       master:
         count: 1
         persistence:
-          size: 1Gi
+          size: 256Mi
         resources:
           requests:
             cpu: 200m
@@ -26,7 +26,7 @@ logging:
       data:
         count: 1
         persistence:
-          size: 1Gi
+          size: 256Mi
         resources:
           requests:
             cpu: 200m
@@ -77,3 +77,24 @@ twistlock:
     console:
       persistence:
         size: 256Mi
+
+addons:
+  sonarqube:
+    enabled: true
+
+  anchore:
+    enabled: true
+
+  gitlab:
+    enabled: true
+    git:
+      tag: "4.10.3-bb.14"
+      
+  argocd:
+    enabled: true
+
+  minio:
+    enabled: true
+
+  mattermost:
+    enabled: true
