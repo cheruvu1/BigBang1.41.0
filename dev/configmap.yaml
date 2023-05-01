@@ -72,7 +72,7 @@ kyverno:
     replicaCount: 1
 
 twistlock:
-  enabled: false
+  enabled: true
   values:
     console:
       persistence:
