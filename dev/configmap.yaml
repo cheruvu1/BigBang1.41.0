@@ -18,7 +18,7 @@ logging:
       master:
         count: 1
         persistence:
-          size: 256Mi
+          size: 1Gi
         resources:
           requests:
             cpu: 200m
@@ -26,7 +26,7 @@ logging:
       data:
         count: 1
         persistence:
-          size: 256Mi
+          size: 1Gi
         resources:
           requests:
             cpu: 200m
@@ -36,7 +36,7 @@ logging:
       resources:
         requests:
           cpu: 200m
-          memory: 512Mi
+          memory: 1Gi
 
 monitoring:
   enabled: true
