@@ -80,13 +80,13 @@ twistlock:
 
 addons:
   sonarqube:
-    enabled: true
+    enabled: false
 
   anchore:
     enabled: true
 
   gitlab:
-    enabled: true
+    enabled: false
     git:
       tag: "4.10.3-bb.14"
       
@@ -94,7 +94,7 @@ addons:
     enabled: true
 
   minio:
-    enabled: true
+    enabled: false
 
   mattermost:
-    enabled: true
+    enabled: false
